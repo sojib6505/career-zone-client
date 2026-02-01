@@ -25,7 +25,7 @@ export default function Navbar() {
                         <li><NavLink>Find a Job</NavLink></li>
                         <li><NavLink>Recruiters</NavLink></li>
                         <li><NavLink>Candidates</NavLink></li>
-                        <li><NavLink>Blog</NavLink></li>
+                        <li><NavLink to='/application'>My Application</NavLink></li>
                         <li><NavLink>Recruiters</NavLink></li>
                         <li><NavLink>About Us</NavLink></li>
                     </ul>
@@ -42,7 +42,7 @@ export default function Navbar() {
                     <li><NavLink>Find a Job</NavLink></li>
                     <li><NavLink>Recruiters</NavLink></li>
                     <li><NavLink>Candidates</NavLink></li>
-                    <li><NavLink>Blog</NavLink></li>
+                    <li><NavLink to='/application'>My Application</NavLink></li>
                     <li><NavLink>Recruiters</NavLink></li>
                     <li><NavLink>About Us</NavLink></li>
                 </ul>
