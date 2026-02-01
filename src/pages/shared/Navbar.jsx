@@ -1,6 +1,9 @@
 import { NavLink } from "react-router"
+import useAuth from "../../hooks/useAuth"
 
 export default function Navbar() {
+    const {user,firebaseLoading} = useAuth()
+    console.log(user)
     return (
         <div className="navbar bg-neutral">
             <div className="navbar-start">
@@ -44,11 +47,15 @@ export default function Navbar() {
                     <li><NavLink>About Us</NavLink></li>
                 </ul>
             </div>
-            <div className="navbar-end flex gap-2">
+            
+            {
+            firebaseLoading? <p className="navbar-end">loading........</p> :
+            user ? <NavLink to='/user_profile' className="navbar-end">user!!</NavLink> :
+               <div className="navbar-end flex gap-2">
                 <NavLink to='/register' className='underline'>Register</NavLink>
                 <NavLink to='/sign_in' className='btn btn-primary hover:btn-secondary'>SignIn</NavLink>
-
             </div>
+            }
         </div>
     )
 }
