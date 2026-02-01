@@ -34,7 +34,7 @@ export default function Navbar() {
 
             </div>
             <div className="navbar-center hidden lg:flex">
-                <ul className="menu menu-horizontal px-1">
+                <ul className="menu menu-horizontal px-1 font-semibold ">
                     <li><NavLink to='/'>Home</NavLink></li>
                     <li><NavLink>Find a Job</NavLink></li>
                     <li><NavLink>Recruiters</NavLink></li>
