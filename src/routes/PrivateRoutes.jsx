@@ -5,7 +5,7 @@ export default function PrivateRoutes({children}) {
     const {user,firebaseLoading} = useAuth()
     const location = useLocation()
     if(firebaseLoading){
-        return <p>loading</p>
+        return <p>loading.........</p>
     }
     if(user){
        return children
